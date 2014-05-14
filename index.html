@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Multi-page template</title> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script>
+      $(document).bind('mobileinit', function() {
+
+      });
+    </script>
+  </head> 
+
+  <body> 
+    <!-- Start of first page: #one -->
+    <div data-role="page" id="main" data-theme="c" >
+
+      <div data-role="header" data-theme="c"> 
+        <h1>Main Page</h1>
+      </div>
+
+      <div data-role="content" >	
+        <h3>Datamatikernes SuperBank</h3>
+        <h3>Mangepenge vej 27</h3>
+        <h3>2820 Gentofte</h3>
+        <p>Telefon: <a href="tel:99999999">Call Us</a> </p>
+        <p>SMS: <a href="sms:88888888">Send us a SMS </a> </p>
+        <p>Email: <a href="mailto:psb@mangepenge.dk">Send us a mail</a> </p>
+        <ul data-role="listview" data-inset="true" >
+          <li><a href="#loan"  >Loans</a></li>
+          <li><a href="#deposit">Deposit</a></li>
+          <li><a href="private/privateMobile.html">My Loans</a></li>
+        </ul>
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="c">
+        <h4>Datamatikernes Superbank</h4>
+      </div>
+    </div>
+
+    <!-- Start of second page: #two -->
+    <div data-role="page" id="loan" data-theme="c">
+
+      <div data-role="header" data-theme="c">
+        <h1>Loans</h1>
+      </div>
+
+      <div data-role="content">	
+        <p>Info about loans</p>	
+        </br>
+        </br>
+        <p><a href="#main" data-direction="reverse" data-role="button" >Back</a></p>
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="c">
+        <h4>Datamatikernes Superbank</h4>
+      </div>
+    </div>
+
+    <!-- Start of third page: #popup -->
+    <div data-role="page" id="deposit" data-theme="c" >
+
+      <div data-role="header" data-theme="c" >
+        <h1>Deposits</h1>
+      </div>
+      <div data-role="content" >	
+        <p>Info about your deposit Accounts</p>
+        </br>
+        </br>
+         <p><a href="#main" data-direction="reverse" data-role="button" >Back</a></p>
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="c">
+        <h4>Datamatikernes Superbank</h4>
+      </div>
+    </div>
+  </body>
+</html>
